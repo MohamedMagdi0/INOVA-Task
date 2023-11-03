@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Courses from "./Pages/Courses/Courses";
 import Contact from "./Pages/Contact/Contact";
+import CourseDetails from "./Pages/CourseDetails/CourseDetails";
 import Header from "./Components/Header/Header";
 import { Provider } from "react-redux";
 import store from "./Store";
@@ -18,6 +19,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/course" element={<Courses />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="course/:id" element={<CourseDetails />}></Route>
           </Routes>
         </div>
       </div>
